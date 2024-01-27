@@ -2,7 +2,6 @@ package com.basillio.dawiiCl1.controller;
 
 import com.basillio.dawiiCl1.domain.Alumnos;
 import com.basillio.dawiiCl1.service.AlumnosService;
-import lombok.experimental.PackagePrivate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,7 +26,7 @@ public class AlumnoController {
     @PostMapping("/nuevoAlumno")
     public String guardarAlumno(Alumnos alumnos, RedirectAttributes redirect, Model model) {
         as.guardarAlumno(alumnos);
-        redirect.addFlashAttribute("msgCorrecto", "El Alumno se Agrego Exitosamente!!");
+        redirect.addFlashAttribute("msgCorrecto", "El Alumno se Agrego Exitosamente!!");        
         return "redirect:/listaAlumnos";
     }
     

@@ -1,12 +1,9 @@
 package com.basillio.dawiiCl1;
 
-import com.basillio.dawiiCl1.domain.Alumnos;
 import com.basillio.dawiiCl1.domain.Cursos;
-import com.basillio.dawiiCl1.service.AlumnosService;
 import com.basillio.dawiiCl1.service.CursosService;
 import java.time.LocalDate;
 import java.time.Month;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

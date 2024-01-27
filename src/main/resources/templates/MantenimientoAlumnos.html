@@ -138,6 +138,9 @@
             
             $(document).ready(function() {
                 $( ".toast" ).toast('show');
+                setInterval(function() {
+                    $( ".toast" ).toast('hide');
+                }, 2000);
             });
 
         </script>
